@@ -32,11 +32,13 @@ class App extends Component {
   }
 
   componentWillMount () {
+    /* global fetch */
     fetch('https://test-c7f46.firebaseio.com/thing.json', {method: 'GET'})
       .then((pkg) => pkg.json())
       .then((pkg) => {
         this.setState({data: Object.entries(pkg)})
       })
+      .catch(console.log)
   }
 }
 
