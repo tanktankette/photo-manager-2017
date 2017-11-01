@@ -4,8 +4,8 @@ import ContactRow from './ContactRow'
 export default class ContactTable extends Component {
   render () {
     let rows = []
-    for (let contact of this.props.contacts) {
-      rows.push(<ContactRow contact={contact} />)
+    for (let [key, contact] of this.props.contacts) {
+      rows.push(<ContactRow key={key} contact={contact} />)
     }
     return (
       <table>
