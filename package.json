@@ -1,7 +1,7 @@
 {
   "name": "user-manager-app",
   "version": "0.1.0",
-  "homepage": "https://tanktankette.github.io/photo-manager-2017",
+  "homepage": "https://tanktankette.github.io/photo-manager-2017/",
   "private": true,
   "dependencies": {
     "node-fetch": "^1.7.3",
