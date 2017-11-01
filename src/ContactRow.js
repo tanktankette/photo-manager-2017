@@ -13,6 +13,7 @@ export default class ContactRow extends Component {
         <td>{contact.state}</td>
         <td>{contact.zip}</td>
         <td>{contact.country}</td>
+        <td><img src={contact.avatar} style={{width: '50px'}} /></td>
       </tr>
     )
   }
