@@ -5,7 +5,9 @@
   "private": true,
   "dependencies": {
     "es6-promise": "^4.1.1",
+    "fetch-mock": "^5.13.1",
     "isomorphic-fetch": "^2.2.1",
+    "mock-fetch": "^1.0.0",
     "node-fetch": "^1.7.3",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
