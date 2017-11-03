@@ -16,7 +16,6 @@ class App extends Component {
   render () {
     console.log('rendering')
     if (this.state.data.length > 0) {
-      console.log(this.state.data)
       return (
         <div className='App'>
           <ContactTable contacts={this.state.data} />
@@ -33,7 +32,8 @@ class App extends Component {
 
   componentWillMount () {
     /* global fetch */
-    fetch('https://test-c7f46.firebaseio.com/thing.json', {method: 'GET'})
+    
+    fetch('https://test-c7f46.firebaseio.com/thing.json')
       .then((pkg) => pkg.json())
       .then((pkg) => {
         this.setState({data: Object.entries(pkg)})
