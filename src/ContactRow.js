@@ -4,7 +4,7 @@ export default class ContactRow extends Component {
   render () {
     const contact = this.props.contact
     return (
-      <tr>
+      <tr className='user'>
         <td>{contact.firstName}</td>
         <td>{contact.lastName}</td>
         <td>{contact.email}</td>

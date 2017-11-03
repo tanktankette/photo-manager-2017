@@ -36,7 +36,7 @@ class App extends Component {
     fetch('https://test-c7f46.firebaseio.com/thing.json')
       .then((pkg) => pkg.json())
       .then((pkg) => {
-        this.setState({data: pkg})
+        this.setState({data: Object.entries(pkg)})
       })
       .catch(console.log)
   }
